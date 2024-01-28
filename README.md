@@ -1,15 +1,14 @@
-# Getting Started with Create React App
+## 프로젝트 개요 :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+시간 내에서 풀지 못한 문제를 다시 풀어 보았습니다.
 
-## Available Scripts
+요구 사항 :
 
-프로젝트 실행 방법 :
+- 애플리케이션이 로드될 때, 디폴트 입력 필드들
+- 리스트는 성(Last name)을 기준으로 자동 정렬
+- 폼을 사용해서 사용자가 이름(First name), 성(Last name), 전화번호(Phone)를 입력할 수 있어야 하며, 제출 버튼이 있어야 함
+- 입력된 모든 정보를 리스트로 표시
+
+## 프로젝트 실행 방법 :
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.

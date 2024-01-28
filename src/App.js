@@ -54,19 +54,19 @@ function InformationTable({ userlist }) {
 }
 
 function PhoneBookForm({ addEntryToPhoneBook }) {
-  const [newEntry, setNewUser] = useState({
+  const [newUser, setNewUser] = useState({
     firstName: "Coder",
     lastName: "Byte",
     phone: "8885559999",
   });
 
   const handleInputChange = (event) => {
-    setNewUser({ ...newEntry, [event.target.name]: event.target.value });
+    setNewUser({ ...newUser, [event.target.name]: event.target.value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    addEntryToPhoneBook(newEntry);
+    addEntryToPhoneBook(newUser);
     setNewUser({ firstName: "", lastName: "", phone: "" });
   };
 
@@ -77,7 +77,7 @@ function PhoneBookForm({ addEntryToPhoneBook }) {
         type="text"
         name="firstName"
         placeholder="First Name"
-        value={newEntry.firstName}
+        value={newUser.firstName}
         onChange={handleInputChange}
       />
       <input
@@ -85,7 +85,7 @@ function PhoneBookForm({ addEntryToPhoneBook }) {
         type="text"
         name="lastName"
         placeholder="Last Name"
-        value={newEntry.lastName}
+        value={newUser.lastName}
         onChange={handleInputChange}
       />
       <input
@@ -93,7 +93,7 @@ function PhoneBookForm({ addEntryToPhoneBook }) {
         type="text"
         name="phone"
         placeholder="Phone"
-        value={newEntry.phone}
+        value={newUser.phone}
         onChange={handleInputChange}
       />
       <button type="submit" style={style.form.submitBtn}>
